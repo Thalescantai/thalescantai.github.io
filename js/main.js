@@ -198,7 +198,7 @@
     * ------------------------------------------------------ */
     const ssLightbox = function() {
 
-        const folioLinks = document.querySelectorAll('.folio-item a');
+        const folioLinks = document.querySelectorAll('.project-card[href^="#modal"]');
         const modals = [];
 
         folioLinks.forEach(function(link) {

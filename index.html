@@ -5,9 +5,18 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Portfolio</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Thales Cantai · Programador Sênior | Engenharia de Software com IA</title>
+    <meta name="description" content="Thales Cantai — Programador Sênior full stack (Java, Ruby on Rails) especializado em engenharia de software orientada por Inteligência Artificial: LLMs, agentes de código, chats de IA, visão computacional e CI/CD.">
+    <meta name="author" content="Thales Cantai">
+    <meta name="theme-color" content="#0b1418">
+
+    <!-- social
+    ================================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thales Cantai · Programador Sênior | Engenharia de Software com IA">
+    <meta property="og:description" content="Java, Ruby on Rails e IA: LLMs e agentes de código da especificação ao deploy, com arquitetura limpa, testes e CI/CD.">
+    <meta property="og:url" content="https://thalescantai.github.io/">
+    <meta property="og:locale" content="pt_BR">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -17,6 +26,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- script
     ================================================== -->
@@ -25,9 +35,24 @@
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Thales Cantai",
+        "jobTitle": "Programador Sênior · Engenharia de Software com IA",
+        "url": "https://thalescantai.github.io/",
+        "sameAs": [
+            "https://github.com/Thalescantai",
+            "https://www.linkedin.com/in/thales-azevedo-de-cantai-2a8720206/"
+        ]
+    }
+    </script>
 
 </head>
 
@@ -49,12 +74,14 @@
                 <ul>
                     <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
                     <li><a class="smoothscroll" href="#about">Sobre</a></li>
-                    <li><a class="smoothscroll" href="#resume">Resumo</a></li>
-                    <li><a class="smoothscroll" href="#portfolio">Trabalhos</a></li>
+                    <li><a class="smoothscroll" href="#especialidade-ia">IA</a></li>
+                    <li><a class="smoothscroll" href="#resume">Carreira</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Projetos</a></li>
+                    <li><a class="smoothscroll" href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div> <!-- end row -->
-        
+
         <a class="s-header__menu-toggle" href="#0" title="Menu">
             <span class="s-header__menu-icon"></span>
         </a>
@@ -72,17 +99,34 @@
 
                 <div class="s-hero__content-about">
 
+                    <p class="hero-eyebrow">Programador Sênior · Java · Ruby on Rails · <strong>IA</strong></p>
+
                     <h1> Thales Cantai </h1>
 
                     <h3>
-                        <span>Desenvolvedor full stack</span>, <span>webdesigner</span> e bacharel em Sistemas de Informação, com uma paixão por transformar ideias em soluções digitais funcionais e criativas. Entusiasta de <span>Power BI</span>, adoro explorar dados para extrair insights poderosos e tomar decisões mais inteligentes. <a class="smoothscroll" href="#about">Vamos começar a rolar</a>
-                        e descobrir mais <a class="smoothscroll" href="#about">sobre o que faço</a>.
+                        Programador full stack <span>especializado em engenharia de software com Inteligência Artificial</span>.
+                        Uso LLMs e agentes de código da especificação ao deploy para transformar planilhas e
+                        processos manuais em sistemas web robustos — com arquitetura limpa, testes e CI/CD.
                     </h3>
 
+                    <div class="hero-actions">
+                        <a class="btn btn--primary smoothscroll" href="#especialidade-ia">Minha especialidade em IA</a>
+                        <a class="btn btn--ghost smoothscroll" href="#portfolio">Ver projetos</a>
+                    </div>
+
+                    <ul class="hero-tags" aria-label="Tecnologias principais">
+                        <li>Claude</li>
+                        <li>OpenAI Codex</li>
+                        <li>Agentes de código</li>
+                        <li>Java 25 · Spring Boot 4</li>
+                        <li>Ruby on Rails</li>
+                    </ul>
+
                     <div class="s-hero__content-social">
-                        <a href="https://www.instagram.com/thales_cantai/"><i class="fab fa-instagram" aria-hidden="true"></i></a>                      
-                        <a href="https://github.com/Thalescantai"><i class="fab fa-github" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/thales-azevedo-de-cantai-2a8720206/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Thalescantai" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/thales-azevedo-de-cantai-2a8720206/" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/thales_cantai/" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/5569999533342" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
 
                 </div> <!-- end s-hero__content-about -->
@@ -93,9 +137,9 @@
         <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
                 <span class="scroll-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
                 </span>
-                <span class="scroll-text">Scroll Down</span>
+                <span class="scroll-text">Role para baixo</span>
             </a>
         </div> <!-- s-hero__scroll -->
 
@@ -108,38 +152,44 @@
 
         <div class="row">
             <div class="column large-3 tab-12">
-                <img class="s-about__pic" src="images/avatars/user-09.jpeg" alt="">
+                <img class="s-about__pic" src="images/avatars/thales.jpg" alt="Foto de Thales Cantai" width="288" height="288">
             </div>
             <div class="column large-9 tab-12 s-about__content">
-                <h3>Sobre Mim</h3>
+                <h3>Sobre mim</h3>
                 <p>
-                    Bacharel em Sistemas de Informação com experiência sólida no desenvolvimento de software, 
-                    atuando tanto no front-end quanto no back-end para criar websites completos e funcionais. 
-                    Além disso, sou entusiasta de <span>Power BI</span>, com habilidades em transformar dados em insights valiosos 
-                    para auxiliar na tomada de decisões estratégicas. Apaixonado por tecnologia, estou sempre em busca 
-                    de novos desafios e oportunidades para expandir meus conhecimentos e crescer profissionalmente. 
-                    Busco uma oportunidade na área de desenvolvimento e análise de dados que me permita contribuir 
-                    com soluções inovadoras e, ao mesmo tempo, evoluir em minha carreira, trazendo novas perspectivas 
-                    para o futuro.
+                    Sou programador sênior full stack e bacharel em Sistemas de Informação, com mais de 6 anos de
+                    experiência no setor público e na saúde. Hoje atuo no NUCGE da Justiça Federal em Rondônia
+                    (TRF/SJRO), onde fundei o setor de desenvolvimento.
                 </p>
+                <p>
+                    Minha especialidade é a <span>engenharia de software com IA</span>: uso IA generativa e agentes de código como
+                    parte central do processo — da especificação ao deploy — e mantenho a qualidade com revisão de
+                    código, testes automatizados e CI/CD. Também sou especialista em montar arquivos
+                    <span>Markdown (.md)</span>: documentação técnica, especificações e arquivos de contexto e instrução para agentes de IA.
+                </p>
+
+                <ul class="stat-strip">
+                    <li><strong>6+</strong><span>anos no setor público e na saúde</span></li>
+                    <li><strong>8</strong><span>municípios atendidos pelo sistema hospitalar</span></li>
+                    <li><strong>~2,5 mil</strong><span>usuários no PROD+SJRO</span></li>
+                    <li><strong>6</strong><span>projetos com CI/CD do zero</span></li>
+                </ul>
 
                 <hr>
 
                 <div class="row s-about__content-bottom">
                     <div class="column w-1000-stack">
                         <h3>Contatos</h3>
-    
                         <p>
-                        Thales Azevedo de Cantai <br>
-                        <a href="https://wa.me/556999533342">69 99953-3342</a> <br>
-                        <a href="mailto:thalescantai54@gmail.com">thalescantai54@gmail.com</a>
+                            Thales Cantai <br>
+                            <a href="https://wa.me/5569999533342">(69) 9 9953-3342</a> <br>
+                            <a href="mailto:thalescantai54@gmail.com">thalescantai54@gmail.com</a>
                         </p>
-                        
                     </div>
                     <div class="column w-1000-stack">
-                        <a href="#" class="btn btn--download">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
-                            Download CV
+                        <a href="https://wa.me/5569999533342" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"/></svg>
+                            Vamos conversar
                         </a>
                     </div>
                 </div>
@@ -149,71 +199,276 @@
     </section> <!-- end s-about -->
 
 
+    <!-- especialidade em IA
+    ================================================== -->
+    <section id="especialidade-ia" class="s-ai target-section">
+
+        <div class="row s-ai__header">
+            <div class="column large-12">
+                <span class="s-ai__eyebrow">Minha especialidade</span>
+                <h2>Engenharia de software <span class="grad">com Inteligência Artificial</span></h2>
+                <p>
+                    A IA não é um adendo no meu trabalho: é o centro do processo. Uso LLMs e agentes de código em
+                    cada etapa — e entrego sistemas em produção, com revisão, testes e pipeline.
+                    Meu primeiro chat de IA foi o <strong>Serafin</strong>, no ar até hoje no site da SEFIN-RO.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column large-12">
+                <ol class="ai-flow" aria-label="Fluxo de desenvolvimento com IA">
+                    <li><span>1</span>Requisitos</li>
+                    <li><span>2</span>Spec em <code>.md</code></li>
+                    <li><span>3</span>Agente de código</li>
+                    <li><span>4</span>Revisão e testes</li>
+                    <li><span>5</span>CI/CD</li>
+                    <li><span>6</span>Deploy</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="ai-grid">
+
+                    <article class="ai-card">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                        <h4>Desenvolvimento orientado por IA</h4>
+                        <p>LLMs e agentes de código do levantamento de requisitos ao deploy, com revisão de código e testes automatizados para manter a qualidade.</p>
+                    </article>
+
+                    <article class="ai-card">
+                        <i class="fas fa-robot" aria-hidden="true"></i>
+                        <h4>Agentes de código</h4>
+                        <p>Claude (agentes em VPS) e OpenAI Codex em nível avançado, com DevOps automatizado por IA.</p>
+                    </article>
+
+                    <article class="ai-card">
+                        <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        <h4>Engenharia de prompt e de contexto</h4>
+                        <p>Especialista em arquivos <code>.md</code>: READMEs, specs, ADRs e arquivos de instrução e contexto para agentes de IA.</p>
+                    </article>
+
+                    <article class="ai-card">
+                        <i class="fas fa-table" aria-hidden="true"></i>
+                        <h4>Planilhas em sistemas</h4>
+                        <p>Migração de planilhas Excel e Power Apps para sistemas web, com IA analisando processos e modelando dados — menos tempo de entrega.</p>
+                    </article>
+
+                    <article class="ai-card">
+                        <i class="fas fa-comments" aria-hidden="true"></i>
+                        <h4>Chats de IA em produção</h4>
+                        <p>Serafin (SEFIN-RO), chat de IA no sistema hospitalar da Santa Casa de Ji-Paraná e no Hospital João Paulo II, além de emissão de prontuários com IA.</p>
+                    </article>
+
+                    <article class="ai-card">
+                        <i class="fas fa-eye" aria-hidden="true"></i>
+                        <h4>Visão computacional</h4>
+                        <p>Análise de estruturas e imagens com IA, usando SourceAFIS, InsightFace e FAISS.</p>
+                    </article>
+
+                    <article class="ai-card">
+                        <i class="fas fa-satellite" aria-hidden="true"></i>
+                        <h4>Satélite + IA</h4>
+                        <p>Imagens de satélite com IA para detectar e analisar queimadas na Amazônia, em projeto para o IFRO.</p>
+                    </article>
+
+                    <article class="ai-card">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <h4>DevOps com IA</h4>
+                        <p>CI/CD do zero: GitLab CI, Docker, auditoria de dependências e varredura de segredos, com deploy automático em 2 a 5 minutos.</p>
+                    </article>
+
+                </div> <!-- end ai-grid -->
+            </div>
+        </div>
+
+    </section> <!-- end s-ai -->
+
+
     <!-- resume
     ================================================== -->
     <section id="resume" class="s-resume target-section">
-        
+
         <div class="row s-resume__section">
             <div class="column large-3 tab-12">
                 <h3 class="section-header-allcaps">Carreira</h3>
             </div>
             <div class="column large-9 tab-12">
-                <div class="resume-block">
 
+                <div class="resume-block">
                     <div class="resume-block__header">
-                        <h4 class="h3">GEFIS - SEFIN/RO</h4>
+                        <h4 class="h3">AFS · Justiça Federal – TRF/SJRO (NUCGE) <span class="tag-now">atual</span></h4>
                         <p class="resume-block__header-meta">
-                            <span>Analista de Business Intelligence</span> 
-                            <span class="resume-block__header-date">
-                                Fevereiro 2021 - Agosto 2021
-                            </span>
+                            <span>Programador Sênior · fundador do setor de desenvolvimento</span>
+                            <span class="resume-block__header-date">abr/2026 – Atual</span>
                         </p>
                     </div>
-
-                    <p>
-                        Experiência com análise de dados e desenvolvimento de dashboards interativos utilizando Qlik Sense, Tableau e Oracle APEX. Responsável por transformar dados em insights estratégicos para a SEFIN/GEFIS, otimizando a tomada de decisões através da visualização e modelagem de dados.
-                    </p>
-
+                    <ul class="resume-list">
+                        <li><strong>Setor de desenvolvimento do zero:</strong> defini a base técnica da equipe (2 devs) — sistemas em Ruby on Rails e uma API central de dados em Java 25 e Spring Boot 4 com admin em Angular; monólito modular, MVC com repositories, code review, Conventional Commits e Kanban.</li>
+                        <li><strong>CI/CD completo:</strong> estruturei o GitLab do zero com a infraestrutura; 6 projetos com pipeline de build, testes, auditoria de dependências (npm e gems) e varredura de segredos e de rede, com deploy automático em 2 a 5 min. Docker, Apache e proxy reverso.</li>
+                        <li><strong>Planilhas em sistemas com IA:</strong> IA generativa e agentes de código para analisar planilhas e processos manuais, modelar os dados e gerar sistemas web, reduzindo o tempo de entrega.</li>
+                        <li><strong>Módulo Central:</strong> portal que reúne 5 sistemas, com login via Active Directory (LDAP), SSO entre os sistemas e permissões por grupo do AD.</li>
+                        <li><strong>PROD+SJRO:</strong> reconstruí o sistema de produtividade de cerca de 2,5 mil usuários, antes em Power Apps. Nos primeiros 2 meses, a cobertura do expediente por atividades registradas subiu de 15% para 30% por servidor.</li>
+                        <li><strong>GAM (em desenvolvimento):</strong> migração de mais de 2 mil registros de afastamentos médicos do Excel para a web, com alertas de aposentadoria, exoneração e prazos.</li>
+                    </ul>
                 </div> <!-- end resume-block -->
 
                 <div class="resume-block">
-
                     <div class="resume-block__header">
-                        <h4 class="h3">GETIC - SEFIN/RO</h4>
+                        <h4 class="h3">Santa Casa de Ji-Paraná</h4>
                         <p class="resume-block__header-meta">
-                            <span>Desenvolverdor Full stack Ruby on Rails</span> 
-                            <span class="resume-block__header-date">
-                                Agosto 2021 - Dezembro 2024
-                            </span>
+                            <span>Desenvolvedor Sênior · Líder técnico</span>
+                            <span class="resume-block__header-date">2025 – fev/2026</span>
                         </p>
                     </div>
-
                     <p>
-                        Atuação no desenvolvimento e manutenção visual e funcional de sites e plataformas tanto no
-                        front-end quanto no back-end, além da contribuição em todas as etapas e partes de um sistema, como o servidor e o banco de dados.
+                        Idealizei e arquitetei um sistema de gestão hospitalar que atende <strong>8 municípios e vários hospitais</strong>,
+                        cobrindo o fluxo da entrada do paciente à emissão de documentos e ao <strong>faturamento</strong>: atendimento, prontuário,
+                        exames, retornos, controle de ausências e relatórios, com aderência às regras do SUS e <strong>chat com IA</strong> integrado.
+                        Modelagem PostgreSQL, APIs, permissões por perfil e deploy com Docker em Linux.
                     </p>
-
                 </div> <!-- end resume-block -->
+
                 <div class="resume-block">
                     <div class="resume-block__header">
-                        <h4 class="h3">JPII - SESAU</h4>
+                        <h4 class="h3">Hospital João Paulo II</h4>
                         <p class="resume-block__header-meta">
-                            <span>Desenvolvedor Full Stack PHP</span> 
-                            <span class="resume-block__header-date">
-                                Atual
-                            </span>
+                            <span>Tech Leader · Full Stack Developer</span>
+                            <span class="resume-block__header-date">2025</span>
                         </p>
                     </div>
-
                     <p>
-                        Atualmente atuo como Desenvolvedor Full Stack PHP no JPII - SESAU, sendo responsável pelo desenvolvimento e manutenção de sistemas web. Trabalho tanto no back-end quanto no front-end, garantindo soluções eficientes e escaláveis para a instituição.
+                        Desenvolvedor chefe no <strong>maior hospital de emergência de Rondônia</strong>, liderando a equipe e as decisões técnicas.
+                        Estruturei as bibliotecas locais e o banco de dados, transformei várias planilhas em sistemas — do cadastro ao
+                        atendimento, com <strong>chat de IA</strong> — e implementei a <strong>emissão de prontuários com IA</strong>.
                     </p>
                 </div> <!-- end resume-block -->
 
-                <!-- end resume-block -->
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">GETIC · SEFIN/RO</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Full Stack Developer Sênior</span>
+                            <span class="resume-block__header-date">2021 – 2025</span>
+                        </p>
+                    </div>
+                    <p>
+                        Onde comecei a trabalhar com IA: criei o <strong>Serafin</strong>, meu primeiro chat de IA, em uso até hoje no site da SEFIN-RO
+                        (sefin.ro.gov.br), ligado à receita e à arrecadação do estado. Desenvolvimento e manutenção de sistemas e APIs e gestão de
+                        projetos com Java, JavaScript, Ruby on Rails e PHP.
+                    </p>
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">GEFIS · SEFIN/RO</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Business Intelligence Creator</span>
+                            <span class="resume-block__header-date">2020 – 2021</span>
+                        </p>
+                    </div>
+                    <p>
+                        Dashboards e painéis interativos em Power BI com dados fiscais, apoiando a análise e a tomada de decisão das equipes
+                        técnicas e gerenciais. Uso de Qlik Sense, Tableau e Oracle APEX para integração, visualização e exploração de dados.
+                    </p>
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+                    <div class="resume-block__header">
+                        <h4 class="h3">Tribunal de Justiça de Rondônia</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Estágio · Suporte de Hardware</span>
+                            <span class="resume-block__header-date">2019 – 2020</span>
+                        </p>
+                    </div>
+                    <p>
+                        Suporte técnico em hardware: formatações, atualizações de sistemas, instalação de softwares e equipamentos e manutenção
+                        preventiva e corretiva do parque tecnológico.
+                    </p>
+                </div> <!-- end resume-block -->
+
             </div>
         </div> <!-- s-resume__section -->
 
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Habilidades</h3>
+            </div>
+            <div class="column large-9 tab-12">
+
+                <div class="skill-group skill-group--ai">
+                    <h4><i class="fas fa-brain" aria-hidden="true"></i> Inteligência Artificial</h4>
+                    <ul class="chips">
+                        <li>Desenvolvimento assistido por IA</li>
+                        <li>LLMs</li>
+                        <li>Agentes de código</li>
+                        <li>Claude (agentes em VPS)</li>
+                        <li>OpenAI Codex</li>
+                        <li>Engenharia de prompt e de contexto</li>
+                        <li>Arquivos .md (READMEs, specs, ADRs)</li>
+                        <li>Chats de IA</li>
+                        <li>Planilhas → sistemas com IA</li>
+                        <li>DevOps com IA</li>
+                        <li>Visão computacional</li>
+                        <li>SourceAFIS</li>
+                        <li>InsightFace</li>
+                        <li>FAISS</li>
+                        <li>Satélite + IA</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Back-end</h4>
+                    <ul class="chips">
+                        <li>Java 25</li><li>Spring Boot</li><li>Spring Security</li><li>Spring Data JPA</li><li>Hibernate</li>
+                        <li>Ruby on Rails</li><li>PHP (Laravel e legado)</li><li>Python (FastAPI)</li><li>Node.js</li>
+                        <li>APIs REST</li><li>JWT</li><li>LDAP/SSO</li><li>Sidekiq</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Arquitetura</h4>
+                    <ul class="chips">
+                        <li>Monólito modular (Spring Modulith)</li><li>MVC com repositories</li><li>Orientada a eventos</li>
+                        <li>RabbitMQ</li><li>Redis</li><li>Code review</li><li>Conventional Commits</li><li>Kanban</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Dados e BI</h4>
+                    <ul class="chips">
+                        <li>PostgreSQL</li><li>PostGIS</li><li>MySQL</li><li>Oracle</li><li>Flyway</li><li>Otimização de consultas</li>
+                        <li>Power BI</li><li>Qlik Sense</li><li>Tableau</li><li>Oracle APEX</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Testes e qualidade</h4>
+                    <ul class="chips">
+                        <li>JUnit 5</li><li>Mockito</li><li>Testcontainers</li><li>JaCoCo</li><li>Minitest</li><li>PHPUnit</li><li>Pest</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Cloud e DevOps</h4>
+                    <ul class="chips">
+                        <li>GitLab CI</li><li>GitHub Actions</li><li>Jenkins</li><li>Docker</li><li>Kubernetes</li><li>Linux</li>
+                        <li>Apache e proxy reverso</li><li>AWS (S3, EC2, noções de SQS)</li><li>Cloudflare</li><li>DigitalOcean</li><li>Micrometer</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Front-end e desktop</h4>
+                    <ul class="chips">
+                        <li>Angular</li><li>React</li><li>Next.js</li><li>TypeScript</li><li>StimulusJS</li><li>Electron</li><li>JavaFX</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div> <!-- s-resume__section -->
 
 
         <div class="row s-resume__section">
@@ -221,32 +476,27 @@
                 <h3 class="section-header-allcaps">Educação</h3>
             </div>
             <div class="column large-9 tab-12">
-                <div class="resume-block">
 
-                    <div class="resume-block__header">
-                        <h4 class="h3">Formação</h4>
-                        <p class="resume-block__header-meta">
-                            <span>Bacharel em Sistemas de Informação</span> 
-                            <span class="resume-block__header-date">
-                                
-                            </span>
-                        </p>
+                <div class="edu-grid">
+                    <div class="edu-item">
+                        <h4>Bacharel em Sistemas de Informação</h4>
+                        <p>Faculdade Sapiens</p>
+                        <span>Concluído em 2022</span>
                     </div>
+                    <div class="edu-item">
+                        <h4>Business Intelligence</h4>
+                        <p>Certificado de Power BI · Alura</p>
+                        <span>Concluído em 2023</span>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Ruby on Rails</h4>
+                        <p>Certificado de Full Stack Developer · OneBitCode</p>
+                        <span>Concluído em 2024</span>
+                    </div>
+                </div>
 
-                    <p>
-                        Desenvolvimento de programas de computador, buscando a inovação e a ciência para garantir maior desempenho e produtividade dos setores da economia. Além de desenhar e testar novos programas, o desenvolvedor de software é responsável por realizar manutenção, revisão e atualização. "O objetivo do sistemas de informação é automatizar todas as coisas para que seja apenas necessário discutir o que é belo e moral".
-                        </p>
-
-
-                </div> <!-- end resume-block -->
-
-                <div class="resume-block">
-
-                  
-                </div> <!-- end resume-block -->
             </div>
         </div> <!-- s-resume__section -->
-
 
     </section> <!-- end s-resume -->
 
@@ -257,137 +507,183 @@
 
         <div class="row s-portfolio__header">
             <div class="column large-12">
-                <h3>Minhas últimas criações e participações em Projetos</h3>
+                <h3>Projetos em destaque</h3>
+                <p class="s-portfolio__sub">Sistemas reais em produção ou em desenvolvimento. As imagens são ilustrações dos projetos, sem dados reais.</p>
             </div>
         </div>
 
-        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+        <div class="row">
+            <div class="column large-12">
+                <div class="project-grid">
 
-            <div class="column folio-item">
-                <a href="#modal-01" class="folio-item__thumb">
-                    <img src="images/portfolio/aaa.png" 
-                         srcset="images/portfolio/aaa.png 1x, 
-                                 images/portfolio/aaa.png 2x" alt="">
-                </a>
-            </div> <!-- end folio-item -->
+                    <a href="#modal-serafin" class="project-card">
+                        <img src="images/projects/serafin.svg" alt="Ilustração do chat de IA Serafin" loading="lazy" width="960" height="600">
+                        <div class="project-card__body">
+                            <span class="badge-ai">IA no produto</span>
+                            <h4>Serafin</h4>
+                            <p>Meu primeiro chat de IA, no ar até hoje no site da SEFIN-RO.</p>
+                        </div>
+                    </a>
 
-            <!-- end folio-item -->
+                    <a href="#modal-hospitalar" class="project-card">
+                        <img src="images/projects/gestao-hospitalar.svg" alt="Ilustração do sistema de gestão hospitalar" loading="lazy" width="960" height="600">
+                        <div class="project-card__body">
+                            <span class="badge-ai">IA no produto</span>
+                            <h4>Gestão hospitalar</h4>
+                            <p>Atende 8 municípios, da entrada do paciente ao faturamento, com chat de IA.</p>
+                        </div>
+                    </a>
 
-            <div class="column folio-item">
-                <a href="#modal-08" class="folio-item__thumb">
-                    <img src="images/portfolio/aae.png" 
-                         srcset="images/portfolio/aae.png 1x, 
-                                 images/portfolio/aae.png 2x," alt="">
-                </a>
-            </div> <!-- end folio-item -->
+                    <a href="#modal-queimadas" class="project-card">
+                        <img src="images/projects/queimadas-ia.svg" alt="Ilustração de detecção de queimadas por satélite com IA" loading="lazy" width="960" height="600">
+                        <div class="project-card__body">
+                            <span class="badge-ai">IA no produto</span>
+                            <h4>Queimadas na Amazônia</h4>
+                            <p>Imagens de satélite + IA para detectar e analisar queimadas (IFRO).</p>
+                        </div>
+                    </a>
 
+                    <a href="#modal-central" class="project-card">
+                        <img src="images/projects/modulo-central.svg" alt="Ilustração do portal Módulo Central" loading="lazy" width="960" height="600">
+                        <div class="project-card__body">
+                            <span class="badge-ai badge-ai--soft">SSO · LDAP</span>
+                            <h4>Módulo Central</h4>
+                            <p>Portal que reúne 5 sistemas com login via Active Directory e SSO.</p>
+                        </div>
+                    </a>
 
-            <div class="column folio-item">
-                <a href="#modal-03" class="folio-item__thumb">
-                    <img src="images/portfolio/proffy.png" 
-                         srcset="images/portfolio/proffy.png 1x, 
-                                 images/portfolio/proffy.png 2x," alt="">
-                </a>
-            </div> <!-- end folio-item -->
+                    <a href="#modal-prod" class="project-card">
+                        <img src="images/projects/prod-sjro.svg" alt="Ilustração do painel de produtividade PROD+SJRO" loading="lazy" width="960" height="600">
+                        <div class="project-card__body">
+                            <span class="badge-ai">Planilha → sistema com IA</span>
+                            <h4>PROD+SJRO</h4>
+                            <p>Produtividade para ~2,5 mil usuários: cobertura do expediente de 15% para 30%.</p>
+                        </div>
+                    </a>
 
-            <div class="column folio-item">
-                <a href="#modal-05" class="folio-item__thumb">
-                    <img src="images/portfolio/helpjob.png" 
-                         srcset="images/portfolio/helpjob.png 1x, 
-                                 images/portfolio/helpjob.png 2x," alt="">
-                </a>
-            </div> <!-- end folio-item -->
+                    <a href="#modal-gam" class="project-card">
+                        <img src="images/projects/gam.svg" alt="Ilustração do sistema de afastamentos médicos GAM" loading="lazy" width="960" height="600">
+                        <div class="project-card__body">
+                            <span class="badge-ai">Planilha → sistema com IA</span>
+                            <h4>GAM</h4>
+                            <p>Mais de 2 mil registros migrados do Excel para a web, com alertas e prazos.</p>
+                        </div>
+                    </a>
 
-        </div> <!-- end folio-list -->
+                </div> <!-- end project-grid -->
+            </div>
+        </div>
 
 
         <!-- Modal Templates Popup
         =========================================================== -->
-        <div id="modal-01" hidden>
+        <div id="modal-serafin" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/aaa.png" alt="" />
-    
+                <img src="images/projects/serafin.svg" alt="Ilustração do chat de IA Serafin" />
                 <div class="modal-popup__desc">
-                    <h5>Seleciona</h5>
-                    <p>Site de Processo seletivo para cargos comissionados.</p>
+                    <h5>Serafin</h5>
+                    <p>Meu primeiro chat de IA, criado na GETIC/SEFIN e em uso até hoje no site da SEFIN-RO (sefin.ro.gov.br), ligado à receita e à arrecadação do estado.</p>
                     <ul class="modal-popup__cat">
-                        <li>SEFIN/RO</li>
-                        <li>Ruby on Rails</li>
+                        <li>IA generativa · Chat · SEFIN/RO</li>
                     </ul>
                 </div>
-    
-                <a href="https://seleciona.sefin.ro.gov.br/" class="modal-popup__details">Project link</a>
+                <a href="https://sefin.ro.gov.br" class="modal-popup__details">Ver o site da SEFIN-RO</a>
             </div>
         </div> <!-- end modal -->
 
-         <!-- end modal -->
-
-        <div id="modal-08" hidden>
+        <div id="modal-hospitalar" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/aae.png" alt="" />
-    
+                <img src="images/projects/gestao-hospitalar.svg" alt="Ilustração do sistema de gestão hospitalar" />
                 <div class="modal-popup__desc">
-                    <h5>Consultório</h5>
-                    <p>Site de administração de um Consultório</p>
+                    <h5>Sistema de gestão hospitalar</h5>
+                    <p>Idealizado e arquitetado por mim na Santa Casa de Ji-Paraná: atende 8 municípios e vários hospitais, cobrindo atendimento, prontuário, solicitação de exames, retornos, controle de ausências, relatórios operacionais e faturamento, com aderência às regras do SUS e chat com IA integrado. No Hospital João Paulo II, também implementei a emissão de prontuários com IA.</p>
                     <ul class="modal-popup__cat">
-                        <li>Projeto pessoal, Ruby on Rails</li>
+                        <li>PostgreSQL · APIs · Docker em Linux · IA</li>
                     </ul>
                 </div>
-    
-                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
-
-        <div id="modal-03" hidden>
+        <div id="modal-queimadas" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/proffy.png" alt="" />
-    
+                <img src="images/projects/queimadas-ia.svg" alt="Ilustração de detecção de queimadas por satélite com IA" />
                 <div class="modal-popup__desc">
-                    <h5>Proffy</h5>
-                    <p>Site de agendamento de aula</p>
+                    <h5>Queimadas na Amazônia com IA</h5>
+                    <p>Projeto para o IFRO que combina imagens de satélite e inteligência artificial para detectar e analisar queimadas na Amazônia.</p>
                     <ul class="modal-popup__cat">
-                        <li>Projeto feito em um evento, React</li>
+                        <li>IA · Visão computacional · Imagens de satélite</li>
                     </ul>
                 </div>
-    
-                <a href="https://github.com/Thalescantai/Agendamento-de-aula" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
-
-        <div id="modal-05" hidden>
+        <div id="modal-central" hidden>
             <div class="modal-popup">
-                <img src="images/portfolio/helpjob.png" alt="" />
-    
+                <img src="images/projects/modulo-central.svg" alt="Ilustração do portal Módulo Central" />
                 <div class="modal-popup__desc">
-                    <h5>Proffy</h5>
-                    <p>Site de terceirização de serviços</p>
+                    <h5>Módulo Central</h5>
+                    <p>Portal que reúne 5 sistemas do NUCGE (TRF/SJRO), com login via Active Directory (LDAP), SSO entre os sistemas e permissões por grupo do AD. Antes não havia acesso centralizado.</p>
                     <ul class="modal-popup__cat">
-                        <li>Projeto pessoal, Rails</li>
+                        <li>LDAP · SSO · Ruby on Rails · Java</li>
                     </ul>
                 </div>
-    
-                <a href="https://github.com/Thalescantai/" class="modal-popup__details">Project link</a>
             </div>
         </div> <!-- end modal -->
 
+        <div id="modal-prod" hidden>
+            <div class="modal-popup">
+                <img src="images/projects/prod-sjro.svg" alt="Ilustração do painel de produtividade PROD+SJRO" />
+                <div class="modal-popup__desc">
+                    <h5>PROD+SJRO</h5>
+                    <p>Reconstruí o sistema de produtividade de cerca de 2,5 mil usuários, antes em Power Apps (travava ao editar tarefas e no relatório mensal, e diretores não viam suas equipes). Painéis de horas, cobertura do expediente, grupos de atividade e complexidade; app Electron offline com sincronização (em desenvolvimento). Nos primeiros 2 meses, a cobertura do expediente por atividades registradas subiu de 15% para 30% por servidor.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Ruby on Rails · Electron · Substituição do Power Apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-gam" hidden>
+            <div class="modal-popup">
+                <img src="images/projects/gam.svg" alt="Ilustração do sistema de afastamentos médicos GAM" />
+                <div class="modal-popup__desc">
+                    <h5>GAM · Afastamentos médicos <small>(em desenvolvimento)</small></h5>
+                    <p>Migração de mais de 2 mil registros de afastamentos médicos do Excel para a web, com rotinas de alertas de aposentadoria, exoneração e prazos.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Planilha → sistema web · Alertas</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end modal -->
 
     </section> <!-- end s-portfolio -->
 
 
-    <!-- CTA
-    ================================================== -->
-    
-
-    <!-- testimonials
-    ================================================== -->
-
-
-
     <!-- contact
     ================================================== -->
- 
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row">
+            <div class="column large-12 s-contact__inner">
+                <h3>Vamos construir algo com IA?</h3>
+                <p>Se você tem planilhas, processos manuais ou uma ideia que merece virar sistema, vamos conversar.</p>
+
+                <div class="contact-actions">
+                    <a class="btn btn--primary" href="https://wa.me/5569999533342"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                    <a class="btn btn--ghost" href="mailto:thalescantai54@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> thalescantai54@gmail.com</a>
+                </div>
+
+                <div class="s-hero__content-social s-contact__social">
+                    <a href="https://github.com/Thalescantai" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/thales-azevedo-de-cantai-2a8720206/" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/thales_cantai/" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+                <p class="s-contact__copy">&copy; 2026 Thales Cantai · Programador Sênior · Engenharia de software com IA</p>
+            </div>
+        </div>
+
+    </section> <!-- end s-contact -->
 
 
     <!-- Java Script
